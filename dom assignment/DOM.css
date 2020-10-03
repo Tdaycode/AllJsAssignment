@@ -1,0 +1,12 @@
+* {
+    background-color: cornsilk;
+}
+
+.container-fluid {
+    color: black;
+}
+
+table {
+    text-align: center;
+    border-collapse: separate;
+}
