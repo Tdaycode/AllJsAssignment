@@ -4,16 +4,16 @@
 <style> 
 #container {
     display: none;
-    width: 100px;
-        height: 100px;
+    width: 200px;
+        height: 200px;
         border-radius: 50%;
-        background-color: red;
+        background-color: teal;
         padding: 30px;
         text-align: center;
 }
 
 @-webkit-keyframes mymove {
-    0%   {background-color: red;}
+    0%   {background-color: yellow;}
     100% {background-color: green; width: 255px; height: 255px;}
 }
 
@@ -37,7 +37,7 @@ var x = document.getElementById("container");
 async function showMessage() {
     x.style.display = "block"; 
     x.style.WebkitAnimation = "mymove 4s 1"; 
-    x.style.animation = "mymove 4s 1"; 
+    x.style.animation = "mymove 5s 1"; 
     animate = x.addEventListener("animationend", function handler() {
           setMessage();
         });
@@ -48,8 +48,8 @@ async function showMessage() {
 //Set the container for the TIIDELab Message
 async function setMessage() {
     x.style.backgroundColor = "green";
-    x.style.width = "255px"
-    x.style.height = "255px"
+    x.style.width = "250px"
+    x.style.height = "250px"
     x.style.color = "white";
     await includeText();
  }
